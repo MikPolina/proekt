@@ -1,0 +1,13 @@
+.first{
+  width: 60px;
+  height: 60px;
+  background-color: #B88E2F;
+  border-radius: 10px;
+  &__text{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+  }
+}
