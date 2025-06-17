@@ -4,13 +4,15 @@
   background: url("../images/fon.webp") no-repeat;
   &__title{
     display: flex;
+    align-items: center;
     justify-content: center;
-    vertical-align: center;
     font-size: 48px;
+    padding-top: 106px;
   }
   &__link{
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   &__text1{
     font-size: 16px;

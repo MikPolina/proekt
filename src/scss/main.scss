@@ -1,0 +1,349 @@
+// ==== 1. Utils ====
+@use 'utils/variables';
+
+// ==== 2. Base styles ====
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/layout';
+
+// ==== 3. Layout ====
+@use 'layout/container';
+
+// ==== 4. Components ====
+@use 'components/button';
+@use 'components/card';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/stiker';
+@use 'components/kartprost';
+@use 'components/stiker2';
+@use 'components/overlay';
+@use 'components/pered';
+@use 'components/first';
+@use 'components/second';
+@use 'components/next';
+@use 'components/dop';
+@use 'components/shop';
+
+body {
+  width: 1440px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+//ПОСЛЕ ШАПКИ ГЛАВНАЯ
+  .glav{
+    width: 1440px;
+    height: 716px;
+    &__img{
+      position: relative;
+      z-index: -1;
+    }
+    &__card{
+      span{
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      h{
+        font-size: 52px;
+        color: #B88E2F;
+        font-weight: bold;
+      }
+      p{
+        font-size: 18px;
+      }
+      position: absolute;
+      margin-top: -570px;
+      margin-left: 735px;
+      width: 643px;
+      height: 443px;
+      background: #FFF3E3;
+      &__text{
+        padding-top: 80px;
+        padding-left: 50px;
+        width: 425px;
+        height: 344px;
+        &__button{
+          margin-top: 35px;
+          width: 222px;
+          height: 74px;
+          border: none;
+          background: #B88E2F;
+          color: white;
+          font-size: 16px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  //ЗАГОЛОВОК ПРОСТЫХ КАРТ
+  .zag__kart__prost{
+    width: 1440px;
+    text-align: center;
+    margin-top: 40px;
+    h{
+      font-size: 32px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 20px;
+      color: #666666;
+    }
+  }
+
+  .kart__prost{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .zag__card {
+    width: 1440px;
+    text-align: center;
+    margin-top: 40px;
+    h3 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .cardProd__stiker{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 210px;
+  }
+  .cardProd{
+    width: 1440px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    &__block{
+      width: 285px;
+      position: relative;
+    }
+    &__nov{
+      position: relative;
+    }
+    &__overlay{
+      margin-top: -466px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &__nov:hover .cardProd__overlay {
+      opacity: 1; /* Показываем оверлей при наведении на блок */
+    }
+  }
+  .btn1{
+    margin-left: 42%;
+    margin-bottom: 60px;
+    width: 245px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #B88E2F;
+    background: white;
+    border: 1px solid #B88E2F;
+    padding: 15px;
+  }
+  .rooms{
+    display: flex;
+    background: #FCF8F3;
+    height: 670px;
+    gap: 15px;
+    padding-top: 50px;
+    margin-top: 50px;
+    .rooms__title{
+      font-size: 40px;
+      font-weight: bold;
+      color: #3A3A3A;
+    }
+    &__text{
+      width: 300px;
+      font-size: 16px;
+      color: #616161;
+    }
+    &__button{
+      width: 178px;
+      height: 48px;
+      font-size: 16px;
+      font-weight: bolder;
+      color: white;
+      background: #B88E2F;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    &__body{
+      margin-top: 220px;
+      margin-left: 80px;
+      padding-right: 50px;
+    }
+    .krugi{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+    }
+  }
+  .many{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    &__text{
+      font-size: 20px;
+      font-weight: bolder;
+      color: #616161;
+    }
+    &__zag{
+      font-size: 40px;
+      font-weight: bold;
+      color: #3A3A3A;
+    }
+  }
+
+
+  //_____INDEX2_____
+  .filtr{
+    background-color: #F9F1E7;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    &__filter{
+      display: flex;
+      gap: 15px;
+    }
+    &__1{
+      padding-left: 70px;
+      display: flex;
+      gap: 25px;
+    }
+    &__block{
+      border: none;
+      height: 40px;
+      border-left: #616161 1px solid;
+      padding-left: 30px;
+      padding-bottom: 20px;
+      margin-top: -20px;
+
+    }
+    &__title{
+      font-size: 20px;
+    }
+    &__2{
+      padding-right: 70px;
+      display: flex;
+      gap: 25px;
+      vertical-align: auto;
+    }
+    &__button{
+      width: 55px;
+      height: 55px;
+      background-color: white;
+      border: none;
+      color: #9F9F9F;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+    &__button2{
+      width: 188px;
+      height: 55px;
+      background-color: white;
+      border: none;
+      color: #9F9F9F;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+  }
+  .kartochki{
+    margin-top: 20px;
+  }
+  .nomerki{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+  }
+  .dopi{
+    background: #F9F1E7;
+    width: 1440px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+  }
+//----------Стрелки___________
+  .strelki{
+    width: 1440px;
+    height: 100px;
+    background: #F9F1E7;
+    display: flex;
+    gap: 35px;
+    padding-left: 60px;
+    align-items: center;
+    &__text{
+      font-size: 16px;
+      color: #9f9f9f;
+    }
+    &__span{
+      font-size: 16px;
+      color: black;
+    }
+    &__block{
+      border-left: 1px solid #9f9f9f;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      height: 37px;
+    }
+  }
+  .descrip{
+    align-items: center;
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    padding: 20px;
+    &__title{
+      align-items: center;
+      gap: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    &__span{
+      font-size: 24px;
+      color: black;
+    }
+    &__description{
+      width: 1026px;
+      font-size: 16px;
+      color: #9f9f9f;
+    }
+    &__abzac{
+      transform: translateX(15%);
+    }
+    &__text{
+      font-size: 24px;
+      color: #9f9f9f;
+    }
+    &__img{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .shop__karti{
+    margin-top: 50px;
+    &__zag{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 36px;
+      font-weight: bolder;
+    }
+  }
+}
+
