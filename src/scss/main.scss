@@ -24,6 +24,7 @@
 @use 'components/next';
 @use 'components/dop';
 @use 'components/shop';
+@use 'components/goo';
 
 body {
   width: 1440px;
@@ -345,5 +346,98 @@ body {
       font-weight: bolder;
     }
   }
-}
+  .go{
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    height: 348px;
+    &__title{
+      width: 223px;
+    }
+    &__h{
+      width: 223px;
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    &__view{
+      width: 108px;
+      height: 30px;
+      background: white;
+      border: none;
+      border-bottom: 1px solid #727272;
+      font-size: 20px;
+      color: #727272;
+    }
+    &__button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px;
+      width: 242px;
+      height: 39px;
+      font-size: 14px;
+      font-weight: bolder;
+      color: white;
+      background: #B88E2F;
+      border-radius: 5px;
+      border: none;
+      margin-top: 15px;
+    }
+    &__strela{
+      width: 18px;
+      height: 8.5px;
+    }
+    &__choose{
+      margin-top: -90px;
+    }
+  }
+  .table{
+    width: 1332px;
+    display: flex;
 
+    align-items: center;
+    border-top: 1px solid #9f9f9f;
+    &__title{
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    &__text{
+      font-size: 20px;
+    }
+    &__1{
+      border-right: 1px solid #9f9f9f;
+      padding-top: 20px;
+      width: 300px;
+      padding-left: 30px;
+    }
+    &__12{
+      margin-top: 30px;
+    }
+    &__2{
+      border-right: 1px solid #9f9f9f;
+      width: 304px;
+    }
+    &__3{
+      border-right: 1px solid #9f9f9f;
+      width: 343px;
+    }
+  }
+}
+table{
+  border-collapse: collapse;
+  width: 1332px;
+  border: none;
+  border-top: 1px solid red;
+}
+th{
+  border-right: 1px solid red;
+}
+td{
+  border-right: 1px solid red;
+}
+.tr_last{
+  border: none;
+}
+.bb{ width: 1000px;}

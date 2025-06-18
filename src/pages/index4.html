@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+@@include('../components/_header.html')
+@@include('../components/_pered.html', {"img": "./assets/images/logo",
+"title": "Product Comparison",
+"title2": "Comparison", "ocenka": "4,7",
+"title2": "Comparison",})
+
+<div class="go">
+    <div class="go__title">
+        <h class="go__h">Go to Product page for more
+            Products</h><br>
+        <button type="submit" class="go__view">View More</button>
+    </div>
+
+    <div class="go__card">
+        @@include('../components/_goo.html', {
+        "img":  "./assets/images/shop5",
+        "title": "Asgaard Sofa",
+        "price": "250,000.00",
+        "ocenka": "4.7",
+        "review": "204",
+        "star": "./assets/images/stars",
+        })
+    </div>
+
+    <div class="go__card">
+        @@include('../components/_goo.html', {
+        "img":  "./assets/images/go2",
+        "title": "Outdoor Sofa Set",
+        "price": "224,000.00",
+        "ocenka": "4.2",
+        "review": "145",
+        "star": "./assets/images/stars",
+        })
+    </div>
+
+    <div class="go__choose">
+        <h class="go__h">Add A Product</h>
+
+        <button type="submit" class="go__button">
+            Choose a Product
+            <img src="./assets/images/strelaniz.webp" alt=">" class="go__strela"/>
+        </button>
+    </div>
+
+</div>
+
+
+
+
+<!--<div class="table">-->
+<!--    <div class="table__1">-->
+<!--        <div class="table__11">-->
+<!--        <h class="table__title">General</h>-->
+<!--            <p class="table__text">Sales Package</p>-->
+<!--            <p class="table__text">Model Number</p>-->
+<!--            <p class="table__text">Secondary Material</p>-->
+<!--            <p class="table__text">Configuration</p>-->
+<!--            <p class="table__text">Upholstery Material</p>-->
+<!--            <p class="table__text">Upholstery Color</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__12">-->
+<!--            <h class="table__title">Product</h>-->
+<!--            <p class="table__text">Filling Material</p>-->
+<!--            <p class="table__text">Finish Type</p>-->
+<!--            <p class="table__text">Adjustable Headrest</p>-->
+<!--            <p class="table__text">Maximum Load Capacity</p>-->
+<!--            <p class="table__text">Origin of Manufacture</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__12">-->
+<!--            <h class="table__title">Dimensions</h>-->
+<!--            <p class="table__text">Width</p>-->
+<!--            <p class="table__text">Height</p>-->
+<!--            <p class="table__text">Depth</p>-->
+<!--            <p class="table__text">Weight</p>-->
+<!--            <p class="table__text">Seat Height</p>-->
+<!--            <p class="table__text">Leg Height</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__13">-->
+<!--        <h class="table__title">Warranty</h>-->
+<!--        <p class="table__text">Warranty Summaryl</p>-->
+<!--        <p class="table__text">Warranty Service Type</p>-->
+<!--        <p class="table__text">Covered in Warranty</p>-->
+<!--        <p class="table__text">Not Covered in Warranty</p>-->
+<!--        <p class="table__text">Domestic Warranty</p>-->
+<!--    </div>-->
+
+<!--    </div>-->
+
+
+<!--    <div class="table__2">-->
+<!--        <div class="table__21">-->
+
+<!--            <p class="table__text">1 sectional sofa</p>-->
+<!--            <p class="table__text">TFCBLIGRBL6SRHS</p>-->
+<!--            <p class="table__text">Solid Wood</p>-->
+<!--            <p class="table__text">L-shaped</p>-->
+<!--            <p class="table__text">Fabric + Cotton</p>-->
+<!--            <p class="table__text">Bright Grey & Lion</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__22">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">Foam</p>-->
+<!--            <p class="table__text">Bright Grey & Lion</p>-->
+<!--            <p class="table__text">No</p>-->
+<!--            <p class="table__text">280 KG</p>-->
+<!--            <p class="table__text">India</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__22">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">265.32 cm</p>-->
+<!--            <p class="table__text">76 cm</p>-->
+<!--            <p class="table__text">167.76 cm</p>-->
+<!--            <p class="table__text">45 KG</p>-->
+<!--            <p class="table__text">41.52 cm</p>-->
+<!--            <p class="table__text">5.46 cm</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__23">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">1 Year Manufacturing Warranty</p>-->
+<!--            <p class="table__text">For Warranty Claims or Any Product Related Issues Please Email at operations@trevifurniture.com</p>-->
+<!--            <p class="table__text">Warranty Against Manufacturing Defect</p>-->
+<!--            <p class="table__text">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</p>-->
+<!--            <p class="table__text">1 Year</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="table__3">-->
+<!--        <div class="table__21">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">1 Three Seater, 2 Single Seater</p>-->
+<!--            <p class="table__text">DTUBLIGRBL568</p>-->
+<!--            <p class="table__text">Solid Wood</p>-->
+<!--            <p class="table__text">L-shaped</p>-->
+<!--            <p class="table__text">Fabric + Cotton</p>-->
+<!--            <p class="table__text">Bright Grey & Lion</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__22">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">Matte</p>-->
+<!--            <p class="table__text">Bright Grey & Lion</p>-->
+<!--            <p class="table__text">yes</p>-->
+<!--            <p class="table__text">300 KG</p>-->
+<!--            <p class="table__text">India</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__22">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">265.32 cm</p>-->
+<!--            <p class="table__text">76 cm</p>-->
+<!--            <p class="table__text">167.76 cm</p>-->
+<!--            <p class="table__text">65 KG</p>-->
+<!--            <p class="table__text">41.52 cm</p>-->
+<!--            <p class="table__text">5.46 cm</p>-->
+<!--        </div>-->
+
+<!--        <div class="table__23">-->
+<!--            <h class="table__title"> </h>-->
+<!--            <p class="table__text">1.2 Year Manufacturing Warranty</p>-->
+<!--            <p class="table__text">For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</p>-->
+<!--            <p class="table__text">Warranty of the product is limited to manufacturing defects only.</p>-->
+<!--            <p class="table__text">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</p>-->
+<!--            <p class="table__text">3 Months</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="table__4">-->
+<!--        <h> </h>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<table>
+        <th>General</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    <tr>
+        <td>Sales Package</td>
+        <td>1 sectional sofa</td>
+        <td>1 Three Seater, 2 Single Seater</td>
+        <td class="bb"></td>
+    </tr>
+    <tr>
+        <td>Model Number</td>
+        <td>TFCBLIGRBL6SRHS</td>
+        <td>DTUBLIGRBL568</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Secondary Material</td>
+        <td>Solid Wood</td>
+        <td>Solid Wood</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Configuration</td>
+        <td>L-shaped</td>
+        <td>L-shaped</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Upholstery Material</td>
+        <td>Fabric + Cotton</td>
+        <td>Fabric + Cotton</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Upholstery Color</td>
+        <td>Bright Grey & Lion</td>
+        <td>Fabric + Cotton</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Upholstery Color</td>
+        <td>Bright Grey & Lion</td>
+        <td>Bright Grey & Lion</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td>&nbsp;</td>
+    </tr>
+
+
+
+        <th>Product</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+    <tr>
+        <td>Filling Material</td>
+        <td>Foam</td>
+        <td>Matte</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Finish Type</td>
+        <td>Bright Grey & Lion</td>
+        <td>Bright Grey & Lion</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Adjustable Headrest</td>
+        <td>No</td>
+        <td>yes</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Maximum Load Capacity</td>
+        <td>280 KG</td>
+        <td>300 KG</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Origin of Manufacture</td>
+        <td>India</td>
+        <td>India</td>
+    </tr>
+</table>
+
+
+<!--<div class="dopi">-->
+<!--    <div>-->
+<!--        @@include('../components/_dop.html',{"img": "./assets/images/dop1",-->
+<!--        "dop_title": "High Quality", "dop_text": "crafted from top materials",})-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        @@include('../components/_dop.html',{"img": "./assets/images/dop2",-->
+<!--        "dop_title": "Warranty Protection", "dop_text": "Over 2 years",})-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        @@include('../components/_dop.html',{"img": "./assets/images/dop3",-->
+<!--        "dop_title": "Free Shipping", "dop_text": "Order over 150 $",})-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        @@include('../components/_dop.html',{"img": "./assets/images/dop4",-->
+<!--        "dop_title": "24 / 7 Support", "dop_text": "Dedicated support",})-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--@@include('../components/_footer.html')-->
+
+</table>
+</body>
+</html>

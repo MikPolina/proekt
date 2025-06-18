@@ -1,9 +1,15 @@
 <div class="pered">
     <div class="pered__body">
+        @@if (img != false){
+        <picture >
+            <source srcset="@@img-sm.webp" media="(max-width: 50px)">
+            <source srcset="@@img-lg.webp" media="(max-width: 32px)">
+            <img src="@@img.webp" alt="@@alt" class="pered__logo">
+        </picture>}
         <h class="pered__title">@@title</h>
         <div class="pered__link">
             <div><p class="pered__text1">Home > </p></div>
-            <div><p class="pered__text2"> @@title</p></div>
+            <div><p class="pered__text2"> @@title2</p></div>
         </div>
     </div>
 </div>
