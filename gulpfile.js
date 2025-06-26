@@ -36,43 +36,52 @@ const paths = {
 };
 
 export const html = () =>
-  gulp
-    .src(paths.html.src)
-    .pipe(
-      fileInclude({
-        prefix: '@@',
+    gulp
+        .src(paths.html.src)
+        .pipe(
+            fileInclude({
+              prefix: '@@',
 
-        basepath: 'src/components/',
-      })
-    )
-    .pipe(
-      htmlmin({
-        collapseWhitespace: false,
-        removeComments: true,
-      })
-    )
-    .pipe(gulp.dest(paths.html.dest))
-    .pipe(bs.stream());
+              basepath: 'src/components/',
+            })
+        )
+        .pipe(
+            htmlmin({
+              collapseWhitespace: false,
+              removeComments: true,
+            })
+        )
+        .pipe(gulp.dest(paths.html.dest))
+        .pipe(bs.stream());
 
 export const styles = () =>
-  gulp
-    .src(paths.styles.src)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({ cascade: false }))
-    .pipe(cleanCSS({ level: 2 }))
-    .pipe(gulp.dest(paths.styles.dest))
-    .pipe(bs.stream());
+    gulp
+        .src(paths.styles.src)
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({ cascade: false }))
+        .pipe(cleanCSS({ level: 2 }))
+        .pipe(gulp.dest(paths.styles.dest))
+        .pipe(bs.stream());
 
 const imagesToWebp = () =>
-  gulp.src(paths.images.src, { encoding: false })
-    .pipe(newer(paths.images.dest))
-    .pipe(webp({ quality: 80 }))
-    .pipe(gulp.dest(paths.images.dest))
+    gulp.src(paths.images.src, { encoding: false })
+        .pipe(newer(paths.images.dest))
+        .pipe(webp({ quality: 80 }))
+        .pipe(gulp.dest(paths.images.dest))
 
+const imagesToMobileWebp = () =>
+    gulp.src(paths.images.src, { encoding: false })
+        .pipe(responsive({
+          formats: [
+            { width: 640, rename: { suffix: "-sm" }, format: 'webp' },
+            { width: 1024, rename: { suffix: "-lg" }, format: 'webp' },
+          ]
+        }))
+        .pipe(gulp.dest(paths.images.dest));
 
 // Копирование ассетов
 export const assets = () =>
-  gulp.src(paths.assets.src).pipe(gulp.dest(paths.assets.dest));
+    gulp.src(paths.assets.src).pipe(gulp.dest(paths.assets.dest));
 
 // Очистка
 export const clean = () => deleteAsync(['dist']);
@@ -92,8 +101,9 @@ export const serve = () => {
   gulp.watch(paths.html.watch, html);
   gulp.watch(paths.assets.src, assets);
   gulp.watch(paths.images.src, imagesToWebp);
+  gulp.watch(paths.images.src, imagesToMobileWebp);
 };
 
 // Сборка
-export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp));
+export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp, imagesToMobileWebp));
 export default gulp.series(build, serve);

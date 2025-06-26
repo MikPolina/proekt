@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+@@include('../components/_header.html')
+@@include('../components/_pered.html', {"img": "./assets/images/logo",
+"title": "Product Comparison",
+"title2": "Comparison", "ocenka": "4,7",
+"title2": "Comparison",})
+
+<div class="go">
+    <div class="go__title">
+        <h class="go__h">Go to Product page for more
+            Products</h><br>
+        <button type="submit" class="go__view">View More</button>
+    </div>
+
+    <div class="go__card">
+        @@include('../components/_goo.html', {
+        "img":  "./assets/images/shop5",
+        "title": "Asgaard Sofa",
+        "price": "250,000.00",
+        "ocenka": "4.7",
+        "review": "204",
+        "star": "./assets/images/stars",
+        })
+    </div>
+
+    <div class="go__card">
+        @@include('../components/_goo.html', {
+        "img":  "./assets/images/go2",
+        "title": "Outdoor Sofa Set",
+        "price": "224,000.00",
+        "ocenka": "4.2",
+        "review": "145",
+        "star": "./assets/images/stars",
+        })
+    </div>
+
+    <div class="go__choose">
+        <h class="go__h">Add A Product</h>
+
+        <button type="submit" class="go__button">
+            Choose a Product
+            <img src="./assets/images/strelaniz.webp" alt=">" class="go__strela"/>
+        </button>
+    </div>
+
+</div>
+
+
+
+
+<table>
+        <th class="table__column">General</th>
+        <th class="table__column">&nbsp;</th>
+        <th class="table__column">&nbsp;</th>
+        <th class="table__column2">&nbsp;</th>
+
+    <tr>
+        <td>Sales Package</td>
+        <td>1 sectional sofa</td>
+        <td>1 Three Seater, 2 Single Seater</td>
+
+    </tr>
+    <tr>
+        <td>Model Number</td>
+        <td>TFCBLIGRBL6SRHS</td>
+        <td>DTUBLIGRBL568</td>
+
+    </tr>
+    <tr>
+        <td>Secondary Material</td>
+        <td>Solid Wood</td>
+        <td>Solid Wood</td>
+
+    </tr>
+    <tr>
+        <td>Configuration</td>
+        <td>L-shaped</td>
+        <td>L-shaped</td>
+    </tr>
+    <tr>
+        <td>Upholstery Material</td>
+        <td>Fabric + Cotton</td>
+        <td>Fabric + Cotton</td>
+    </tr>
+    <tr>
+        <td>Upholstery Color</td>
+        <td>Bright Grey & Lion</td>
+        <td>Fabric + Cotton</td>
+    </tr>
+    <tr>
+        <td>Upholstery Color</td>
+        <td>Bright Grey & Lion</td>
+        <td>Bright Grey & Lion</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+
+
+        <th>Product</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+    <tr>
+        <td>Filling Material</td>
+        <td>Foam</td>
+        <td>Matte</td>
+    </tr>
+    <tr>
+        <td>Finish Type</td>
+        <td>Bright Grey & Lion</td>
+        <td>Bright Grey & Lion</td>
+    </tr>
+    <tr>
+        <td>Adjustable Headrest</td>
+        <td>No</td>
+        <td>yes</td>
+    </tr>
+    <tr>
+        <td>Maximum Load Capacity</td>
+        <td>280 KG</td>
+        <td>300 KG</td>
+    </tr>
+    <tr>
+        <td>Origin of Manufacture</td>
+        <td>India</td>
+        <td>India</td>
+    </tr>
+
+    <th>Dimensions</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <tr>
+        <td>Width</td>
+        <td>265.32 cm</td>
+        <td>265.32 cm</td>
+    </tr>
+    <tr>
+        <td>Height</td>
+        <td>76 cm</td>
+        <td>76 cm</td>
+    </tr>
+    <tr>
+        <td>Depth</td>
+        <td>167.76 cm</td>
+        <td>167.76 cm</td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td>45 KG</td>
+        <td>65 KG</td>
+    </tr>
+    <tr>
+        <td>Seat Height</td>
+        <td>41.52 cm</td>
+        <td>41.52 cm</td>
+    </tr>
+    <tr>
+        <td>Leg Height</td>
+        <td>5.46 cm</td>
+        <td>5.46 cm</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <th>Warranty</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <tr>
+        <td>Warranty Summary</td>
+        <td>1 Year Manufacturing Warranty</td>
+        <td>1.2 Year Manufacturing Warranty</td>
+    </tr>
+    <tr>
+        <td>Warranty Service
+            Type</td>
+        <td>For Warranty Claims or Any Product Related Issues Please Email at operations@trevifurniture.com</td>
+        <td>For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</td>
+    </tr>
+    <tr>
+        <td>Covered in Warranty</td>
+        <td>Warranty Against Manufacturing Defect</td>
+        <td>Warranty of the product is limited to manufacturing defects only.</td>
+    </tr>
+    <tr>
+        <td>Not Covered in Warranty</td>
+        <td>The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</td>
+        <td>The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</td>
+    </tr>
+    <tr>
+        <td>Domestic Warranty</td>
+        <td>1 Year</td>
+        <td>3 Months</td>
+    </tr>
+    <tr class="tr__button">
+        <th>&nbsp;</th>
+        <td><button type="submit" class="rooms__button">Add To Cart</button></td>
+        <td><button type="submit" class="rooms__button">Add To Cart</button></td>
+    </tr>
+
+</table>
+
+
+<div class="dopi">
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop1",
+        "dop_title": "High Quality", "dop_text": "crafted from top materials",})
+    </div>
+
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop2",
+        "dop_title": "Warranty Protection", "dop_text": "Over 2 years",})
+    </div>
+
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop3",
+        "dop_title": "Free Shipping", "dop_text": "Order over 150 $",})
+    </div>
+
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop4",
+        "dop_title": "24 / 7 Support", "dop_text": "Dedicated support",})
+    </div>
+</div>
+
+@@include('../components/_footer.html')
+
+</table>
+</body>
+</html>

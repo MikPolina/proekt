@@ -1,0 +1,46 @@
+header{
+  width: 1440px;
+  height: 100px;
+  background-color: white;
+}
+a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+h{
+  font-weight: bold;
+  font-size: 34px;
+}
+.header{
+  justify-content: center;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 45px;
+  &__logo{
+    display: flex;
+    gap: 10px;
+    margin-top: -12px;
+    &__logotip{
+      width: 50px;
+      height: 32px;
+    }
+  }
+  &__novigation{
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  &__znaki{
+    width: 243px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+}

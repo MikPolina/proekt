@@ -1,0 +1,13 @@
+.second{
+  width: 60px;
+  height: 60px;
+  background-color: #F9F1E7;
+  border-radius: 10px;
+  &__text{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+  }
+}

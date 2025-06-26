@@ -12,7 +12,533 @@
 // ==== 4. Components ====
 @use 'components/button';
 @use 'components/card';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/stiker';
+@use 'components/kartprost';
+@use 'components/stiker2';
+@use 'components/overlay';
+@use 'components/pered';
+@use 'components/first';
+@use 'components/second';
+@use 'components/next';
+@use 'components/dop';
+@use 'components/shop';
+@use 'components/goo';
+@use 'components/cart';
+@use 'components/cartstr';
+@use 'components/formmini';
+@use 'components/formmax';
+@use 'components/formchoose';
 
 body {
+  width: 1440px;
   background-color: var(--main-color);
+  margin: 0 auto;
+//ПОСЛЕ ШАПКИ ГЛАВНАЯ
+  .glav{
+    width: 1440px;
+    height: 716px;
+    &__img{
+      position: relative;
+      z-index: -1;
+    }
+    &__card{
+      span{
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      h{
+        font-size: 52px;
+        color: #B88E2F;
+        font-weight: bold;
+      }
+      p{
+        font-size: 18px;
+      }
+      position: absolute;
+      margin-top: -570px;
+      margin-left: 735px;
+      width: 643px;
+      height: 443px;
+      background: #FFF3E3;
+      &__text{
+        padding-top: 80px;
+        padding-left: 50px;
+        width: 425px;
+        height: 344px;
+        &__button{
+          margin-top: 35px;
+          width: 222px;
+          height: 74px;
+          border: none;
+          background: #B88E2F;
+          color: white;
+          font-size: 16px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  //ЗАГОЛОВОК ПРОСТЫХ КАРТ
+  .zag__kart__prost{
+    width: 1440px;
+    text-align: center;
+    margin-top: 40px;
+    h{
+      font-size: 32px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 20px;
+      color: #666666;
+    }
+  }
+
+  .kart__prost{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .zag__card {
+    width: 1440px;
+    text-align: center;
+    margin-top: 40px;
+    h3 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .cardProd__stiker{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 210px;
+  }
+  .cardProd{
+    width: 1440px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    &__block{
+      width: 285px;
+      position: relative;
+    }
+    &__nov{
+      position: relative;
+    }
+    &__overlay{
+      margin-top: -466px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &__nov:hover .cardProd__overlay {
+      opacity: 1; /* Показываем оверлей при наведении на блок */
+    }
+  }
+  .rooms{
+    display: flex;
+    background: #FCF8F3;
+    height: 670px;
+    gap: 15px;
+    padding-top: 50px;
+    margin-top: 50px;
+    .rooms__title{
+      font-size: 40px;
+      font-weight: bold;
+      color: #3A3A3A;
+    }
+    &__text{
+      width: 300px;
+      font-size: 16px;
+      color: #616161;
+    }
+    &__button{
+      width: 178px;
+      height: 48px;
+      font-size: 16px;
+      font-weight: bolder;
+      color: white;
+      background: #B88E2F;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    &__body{
+      margin-top: 220px;
+      margin-left: 80px;
+      padding-right: 50px;
+    }
+    .krugi{
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+    }
+  }
+  .many{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    &__text{
+      font-size: 20px;
+      font-weight: bolder;
+      color: #616161;
+    }
+    &__zag{
+      font-size: 40px;
+      font-weight: bold;
+      color: #3A3A3A;
+    }
+  }
+
+
+  //_____INDEX2_____
+  .filtr{
+    background-color: #F9F1E7;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    &__filter{
+      display: flex;
+      gap: 15px;
+    }
+    &__1{
+      padding-left: 70px;
+      display: flex;
+      gap: 25px;
+    }
+    &__block{
+      border: none;
+      height: 40px;
+      border-left: #616161 1px solid;
+      padding-left: 30px;
+      padding-bottom: 20px;
+      margin-top: -20px;
+
+    }
+    &__title{
+      font-size: 20px;
+    }
+    &__2{
+      padding-right: 70px;
+      display: flex;
+      gap: 25px;
+      vertical-align: auto;
+    }
+    &__button{
+      width: 55px;
+      height: 55px;
+      background-color: white;
+      border: none;
+      color: #9F9F9F;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+    &__button2{
+      width: 188px;
+      height: 55px;
+      background-color: white;
+      border: none;
+      color: #9F9F9F;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+  }
+  .kartochki{
+    margin-top: 20px;
+  }
+  .nomerki{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+  }
+  .dopi{
+    background: #F9F1E7;
+    width: 1440px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+  }
+//----------Стрелки___________
+  .strelki{
+    width: 1440px;
+    height: 100px;
+    background: #F9F1E7;
+    display: flex;
+    gap: 35px;
+    padding-left: 60px;
+    align-items: center;
+    &__text{
+      font-size: 16px;
+      color: #9f9f9f;
+    }
+    &__span{
+      font-size: 16px;
+      color: black;
+    }
+    &__block{
+      border-left: 1px solid #9f9f9f;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      height: 37px;
+    }
+  }
+  .descrip{
+    align-items: center;
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    padding: 20px;
+    &__title{
+      align-items: center;
+      gap: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    &__span{
+      font-size: 24px;
+      color: black;
+    }
+    &__description{
+      width: 1026px;
+      font-size: 16px;
+      color: #9f9f9f;
+    }
+    &__abzac{
+      transform: translateX(15%);
+    }
+    &__text{
+      font-size: 24px;
+      color: #9f9f9f;
+    }
+    &__img{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .shop__karti{
+    margin-top: 50px;
+    &__zag{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 36px;
+      font-weight: bolder;
+    }
+  }
+  .go{
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    height: 348px;
+    &__title{
+      width: 223px;
+    }
+    &__h{
+      width: 223px;
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    &__view{
+      width: 108px;
+      height: 30px;
+      background: white;
+      border: none;
+      border-bottom: 1px solid #727272;
+      font-size: 20px;
+      color: #727272;
+    }
+    &__button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px;
+      width: 242px;
+      height: 39px;
+      font-size: 14px;
+      font-weight: bolder;
+      color: white;
+      background: #B88E2F;
+      border-radius: 5px;
+      border: none;
+      margin-top: 15px;
+    }
+    &__strela{
+      width: 18px;
+      height: 8.5px;
+      margin-right: 5px;
+    }
+    &__choose{
+      margin-top: -90px;
+    }
+  }
+  .cartinfo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 80px;
+    padding-top: 70px;
+  }
+
+.chek{
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 100px;
+  &__button{
+    width: 222px;
+    height: 58px;
+    background: rgba(159, 159, 159, 0);
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  &__form{
+    gap: 20px;
+    &__title{
+      position: absolute;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 31px;
+      margin-left: 155px;
+      margin-top: 80px;
+    }
+  }
+  &__formini{
+    gap: 31px;
+    display: flex;
+  }
+  &__formdop {
+    input {
+    width: 453px;
+    height: 75px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+      padding-left: 15px;
+  }
+    margin-top: 56px;
+    display: grid;
+    font-size: 16px;
+  }
+  &__prod{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    &__2{
+      text-align: right;
+    }
+    &__sofa{
+      display: flex;
+      gap: 5px;
+    }
+    &__h{
+font-weight: bolder;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__p1{
+      font-size: 16px;
+      font-weight: lighter;
+      color: #9f9f9f;
+    }
+
+    &__span1{
+      line-height: 30px;
+    }
+    &__span2{
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: bolder;
+      color: #9f9f9f;
+    }
+    &__span3{
+      line-height: 45px;
+      font-size: 24px;
+      color: #B88E2F;
+      font-weight: bold;
+    }
+
+  }
 }
+  .chek2{
+    width: 533px;
+    &__niz{
+      border-top: 1px solid #9f9f9f;
+      margin-top: 31px;
+      padding-top: 25px;
+      &__1{
+        display: flex;
+        gap: 10px;
+        &__krug{
+          margin-top: 7px;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background: black;
+        }
+        &__krug2{
+          margin-top: 6px;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          border: 1px solid #9f9f9f;
+        }
+      }
+    }
+  }
+}
+table{
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  width: 1332px;
+  border: none;
+  border-top: 1px solid #E8E8E8;
+  margin-bottom: 113px;
+}
+.table__column{
+  width: 304px;
+}
+.table__column2{
+  width: 304px;
+  border-right: #2EC1AC;
+}
+th{
+  padding-left: 62px;
+  line-height: 55px;
+  font-size: 28px;
+  border-right: 1px solid #E8E8E8;
+  text-align: left;
+}
+td{
+  padding-left: 62px;
+  line-height: 55px;
+  font-size: 20px;
+  border-right: 1px solid #E8E8E8;
+}
+.tr_last{
+  border: none;
+}
+

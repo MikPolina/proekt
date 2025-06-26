@@ -1,0 +1,35 @@
+.pered{
+  width: 1440px;
+  height: 316px;
+  background: url("../images/fon.webp") no-repeat;
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bolder;
+    padding-top: 106px;
+  }
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  &__text1{
+    font-size: 16px;
+  }
+  &__text2{
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  &__body{
+
+  }
+  &__logo{
+    position: absolute;
+    align-items: center;
+    margin-left: 697px;
+    margin-top: 4%;
+  }
+}

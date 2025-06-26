@@ -1,0 +1,13 @@
+.dop{
+  display: flex;
+  gap: 20px;
+&__title{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #242424;
+}
+  &__text{
+    color: #898989;
+    font-size: 20px;
+  }
+}

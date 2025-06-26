@@ -1,0 +1,41 @@
+.cartstr{
+&__header{
+  background: #F9F1E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  width: 815px;
+  height: 55px;
+}
+  &__body{
+    display: flex;
+    width: 815px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+  }
+  &__img{
+    width: 108px;
+    height: 105px;
+    border-radius: 10px;
+  }
+  span{
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  &__title{
+    font-size: 16px;
+    color: #9f9f9f;
+  }
+  &__kolvo{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

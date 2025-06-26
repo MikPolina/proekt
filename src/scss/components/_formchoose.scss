@@ -1,0 +1,16 @@
+.formchoose{
+  display: grid;
+  margin-top: 36px;
+  display: grid;
+  font-size: 16px;
+  gap: 15px;
+  select{
+    width: 453px;
+    height: 75px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #9f9f9f;
+  }
+}

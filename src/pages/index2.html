@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+@@include('../components/_header.html')
+@@include('../components/_pered.html', {"img": false, "title": "Shop", "title2": "Shop",})
+
+<div class="filtr">
+
+    <div class="filtr__1">
+        <div class="filtr__filter">
+            <div>
+                <img src="./assets/images/fil1.webp" alt="."/>
+            </div>
+            <div>
+                <span class="filtr__title">Filter</span>
+            </div>
+        </div>
+
+        <div>
+            <img src="./assets/images/fil2.webp" alt="."/>
+        </div>
+
+        <div>
+            <img src="./assets/images/fil3.webp" alt="."/>
+        </div>
+
+        <div class="filtr__block">
+            <p class="filtr__title">Showing 1–16 of 32 results</p>
+        </div>
+    </div>
+
+    <div class="filtr__2">
+        <div>
+            <span class="filtr__title">Show</span>
+        </div>
+
+        <div>
+            <button type="submit" class="filtr__button">16</button>
+        </div>
+
+        <div>
+            <span class="filtr__title">Short by</span>
+        </div>
+
+        <div>
+            <button type="submit" class="filtr__button2">Default</button>
+        </div>
+    </div>
+</div>
+<div class="kartochki">
+<div class="cardProd">
+
+    <div class="cardProd__block">
+        <div class="cardProd__nov">
+            <div class="cardProd__stiker">
+                @@include('../components/_stiker.html', {"stikerText": "-30%",})
+            </div>
+            @@include('../components/_card.html', {
+            "img": "./assets/images/card1",
+            "alt": "Карточка1",
+            "title": "Syltherine",
+            "text": "Stylish cafe chair",
+            "price": "2.500.000",
+            "sale": "3.500.000",
+            })
+            <div class="cardProd__overlay">
+                @@include('../components/_overlay.html')
+            </div>
+        </div>
+
+
+        <div class="cardProd__block">
+            <div class="cardProd__nov">
+                @@include('../components/_card.html', {
+                "img": "./assets/images/card2",
+                "alt": "Карточка2",
+                "title": "Leviosa",
+                "text": "Stylish cafe chair",
+                "price": "2.500.000",
+                "sale": false,
+                })
+                <div class="cardProd__overlay">
+                    @@include('../components/_overlay.html')
+                </div>
+            </div>
+
+
+            <div class="cardProd__block">
+                <div class="cardProd__nov">
+                    <div class="cardProd__stiker">
+                        @@include('../components/_stiker.html', {"stikerText": "-50%",})
+                    </div>
+                    @@include('../components/_card.html', {
+                    "img": "./assets/images/card3",
+                    "alt": "Карточка3",
+                    "title": "Lolito",
+                    "text": "Luxury big sofa",
+                    "price": "7.000.000",
+                    "sale": "14.000.000",
+                    })
+                    <div class="cardProd__overlay">
+                        @@include('../components/_overlay.html')
+                    </div>
+                </div>
+
+
+                <div class="cardProd__block">
+                    <div class="cardProd__nov">
+                        <div class="cardProd__stiker">
+                            @@include('../components/_stiker2.html')
+                        </div>
+                        @@include('../components/_card.html', {
+                        "img": "./assets/images/card4",
+                        "alt": "Карточка4",
+                        "title": "Lolito",
+                        "text": "Outdoor bar table and stool",
+                        "price": "500.000",
+                        "sale": false,
+                        })
+                        <div class="cardProd__overlay">
+                            @@include('../components/_overlay.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="kartochki">
+            <div class="cardProd">
+
+                <div class="cardProd__block">
+                    <div class="cardProd__nov">
+                        <div class="cardProd__stiker">
+                            @@include('../components/_stiker.html', {"stikerText": "-30%",})
+                        </div>
+                        @@include('../components/_card.html', {
+                        "img": "./assets/images/card1",
+                        "alt": "Карточка1",
+                        "title": "Syltherine",
+                        "text": "Stylish cafe chair",
+                        "price": "2.500.000",
+                        "sale": "3.500.000",
+                        })
+                        <div class="cardProd__overlay">
+                            @@include('../components/_overlay.html')
+                        </div>
+                    </div>
+
+
+                    <div class="cardProd__block">
+                        <div class="cardProd__nov">
+                            @@include('../components/_card.html', {
+                            "img": "./assets/images/card2",
+                            "alt": "Карточка2",
+                            "title": "Leviosa",
+                            "text": "Stylish cafe chair",
+                            "price": "2.500.000",
+                            "sale": false,
+                            })
+                            <div class="cardProd__overlay">
+                                @@include('../components/_overlay.html')
+                            </div>
+                        </div>
+
+
+                        <div class="cardProd__block">
+                            <div class="cardProd__nov">
+                                <div class="cardProd__stiker">
+                                    @@include('../components/_stiker.html', {"stikerText": "-50%",})
+                                </div>
+                                @@include('../components/_card.html', {
+                                "img": "./assets/images/card3",
+                                "alt": "Карточка3",
+                                "title": "Lolito",
+                                "text": "Luxury big sofa",
+                                "price": "7.000.000",
+                                "sale": "14.000.000",
+                                })
+                                <div class="cardProd__overlay">
+                                    @@include('../components/_overlay.html')
+                                </div>
+                            </div>
+
+
+                            <div class="cardProd__block">
+                                <div class="cardProd__nov">
+                                    <div class="cardProd__stiker">
+                                        @@include('../components/_stiker2.html')
+                                    </div>
+                                    @@include('../components/_card.html', {
+                                    "img": "./assets/images/card4",
+                                    "alt": "Карточка4",
+                                    "title": "Lolito",
+                                    "text": "Outdoor bar table and stool",
+                                    "price": "500.000",
+                                    "sale": false,
+                                    })
+                                    <div class="cardProd__overlay">
+                                        @@include('../components/_overlay.html')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="kartochki">
+                        <div class="cardProd">
+
+                            <div class="cardProd__block">
+                                <div class="cardProd__nov">
+                                    <div class="cardProd__stiker">
+                                        @@include('../components/_stiker.html', {"stikerText": "-30%",})
+                                    </div>
+                                    @@include('../components/_card.html', {
+                                    "img": "./assets/images/card1",
+                                    "alt": "Карточка1",
+                                    "title": "Syltherine",
+                                    "text": "Stylish cafe chair",
+                                    "price": "2.500.000",
+                                    "sale": "3.500.000",
+                                    })
+                                    <div class="cardProd__overlay">
+                                        @@include('../components/_overlay.html')
+                                    </div>
+                                </div>
+
+
+                                <div class="cardProd__block">
+                                    <div class="cardProd__nov">
+                                        @@include('../components/_card.html', {
+                                        "img": "./assets/images/card2",
+                                        "alt": "Карточка2",
+                                        "title": "Leviosa",
+                                        "text": "Stylish cafe chair",
+                                        "price": "2.500.000",
+                                        "sale": false,
+                                        })
+                                        <div class="cardProd__overlay">
+                                            @@include('../components/_overlay.html')
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cardProd__block">
+                                        <div class="cardProd__nov">
+                                            <div class="cardProd__stiker">
+                                                @@include('../components/_stiker.html', {"stikerText": "-50%",})
+                                            </div>
+                                            @@include('../components/_card.html', {
+                                            "img": "./assets/images/card3",
+                                            "alt": "Карточка3",
+                                            "title": "Lolito",
+                                            "text": "Luxury big sofa",
+                                            "price": "7.000.000",
+                                            "sale": "14.000.000",
+                                            })
+                                            <div class="cardProd__overlay">
+                                                @@include('../components/_overlay.html')
+                                            </div>
+                                        </div>
+
+
+                                        <div class="cardProd__block">
+                                            <div class="cardProd__nov">
+                                                <div class="cardProd__stiker">
+                                                    @@include('../components/_stiker2.html')
+                                                </div>
+                                                @@include('../components/_card.html', {
+                                                "img": "./assets/images/card4",
+                                                "alt": "Карточка4",
+                                                "title": "Lolito",
+                                                "text": "Outdoor bar table and stool",
+                                                "price": "500.000",
+                                                "sale": false,
+                                                })
+                                                <div class="cardProd__overlay">
+                                                    @@include('../components/_overlay.html')
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="kartochki">
+                                    <div class="cardProd">
+
+                                        <div class="cardProd__block">
+                                            <div class="cardProd__nov">
+                                                <div class="cardProd__stiker">
+                                                    @@include('../components/_stiker.html', {"stikerText": "-30%",})
+                                                </div>
+                                                @@include('../components/_card.html', {
+                                                "img": "./assets/images/card1",
+                                                "alt": "Карточка1",
+                                                "title": "Syltherine",
+                                                "text": "Stylish cafe chair",
+                                                "price": "2.500.000",
+                                                "sale": "3.500.000",
+                                                })
+                                                <div class="cardProd__overlay">
+                                                    @@include('../components/_overlay.html')
+                                                </div>
+                                            </div>
+
+
+                                            <div class="cardProd__block">
+                                                <div class="cardProd__nov">
+                                                    @@include('../components/_card.html', {
+                                                    "img": "./assets/images/card2",
+                                                    "alt": "Карточка2",
+                                                    "title": "Leviosa",
+                                                    "text": "Stylish cafe chair",
+                                                    "price": "2.500.000",
+                                                    "sale": false,
+                                                    })
+                                                    <div class="cardProd__overlay">
+                                                        @@include('../components/_overlay.html')
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="cardProd__block">
+                                                    <div class="cardProd__nov">
+                                                        <div class="cardProd__stiker">
+                                                            @@include('../components/_stiker.html', {"stikerText": "-50%",})
+                                                        </div>
+                                                        @@include('../components/_card.html', {
+                                                        "img": "./assets/images/card3",
+                                                        "alt": "Карточка3",
+                                                        "title": "Lolito",
+                                                        "text": "Luxury big sofa",
+                                                        "price": "7.000.000",
+                                                        "sale": "14.000.000",
+                                                        })
+                                                        <div class="cardProd__overlay">
+                                                            @@include('../components/_overlay.html')
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cardProd__block">
+                                                        <div class="cardProd__nov">
+                                                            <div class="cardProd__stiker">
+                                                                @@include('../components/_stiker2.html')
+                                                            </div>
+                                                            @@include('../components/_card.html', {
+                                                            "img": "./assets/images/card4",
+                                                            "alt": "Карточка4",
+                                                            "title": "Lolito",
+                                                            "text": "Outdoor bar table and stool",
+                                                            "price": "500.000",
+                                                            "sale": false,
+                                                            })
+                                                            <div class="cardProd__overlay">
+                                                                @@include('../components/_overlay.html')
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+<div class="nomerki">
+    <div>@@include('../components/_first.html',{"first_text": "1",})</div>
+    <div>@@include('../components/_second.html',{"second_text": "2",})</div>
+    <div>@@include('../components/_second.html',{"second_text": "3",})</div>
+    <div>@@include('../components/_next.html',{"next_text": "Next",})</div>
+
+</div>
+
+
+<div class="dopi">
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop1",
+        "dop_title": "High Quality", "dop_text": "crafted from top materials",})
+    </div>
+
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop2",
+        "dop_title": "Warranty Protection", "dop_text": "Over 2 years",})
+    </div>
+
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop3",
+        "dop_title": "Free Shipping", "dop_text": "Order over 150 $",})
+    </div>
+
+    <div>
+        @@include('../components/_dop.html',{"img": "./assets/images/dop4",
+        "dop_title": "24 / 7 Support", "dop_text": "Dedicated support",})
+    </div>
+</div>
+@@include('../components/_footer.html')
+</body>
+</html>
